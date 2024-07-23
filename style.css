@@ -81,13 +81,6 @@ nav ul li{
 
 
 
-
-
-
-
-
-
-
 .bottom{
     position: sticky;
     height: 130px;
@@ -109,5 +102,10 @@ nav ul li{
 }
 
 #myProgressBar{
-    width: 80vh;
+    width: 80vw;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
 }
