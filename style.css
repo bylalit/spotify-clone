@@ -103,11 +103,13 @@ nav ul li{
 
 #myProgressBar{
     width: 80vw;
+    cursor: pointer;
 }
 
 .songInfo{
     position: absolute;
     left: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .songInfo img{
