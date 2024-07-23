@@ -33,6 +33,12 @@ nav ul li{
     width: 44px;
     padding: 0 8px;
 }
+
+.songItemContainer{
+    margin-top:30px ;
+}
+
+
 .container{
     min-height: 65vh;
     background: black;
@@ -51,7 +57,7 @@ nav ul li{
     height: 50px;
     display: flex;
     background-color: #fff;
-    width: 80%;
+    /* width: 80%; */
     color: black;
     margin: 12px 0;
     justify-content: space-between;
@@ -62,13 +68,16 @@ nav ul li{
 .songItem img{
     width: 40px;
     margin: 0 23px 0;
-    border-radius: 5px;
+    border-radius: 35px;
 }
 
 .timestemp{
+    /* cursor: pointer; */
     margin: 0 20px;
 }
-
+.timestemp i{
+    cursor: pointer;
+}
 
 
 
