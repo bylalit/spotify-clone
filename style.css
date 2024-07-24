@@ -93,7 +93,7 @@ nav ul li {
 .icons {
   margin-top: 14px;
 }
-.icons i {
+/* .icons i {
   font-size: 2rem;
   cursor: pointer;
 }
@@ -112,4 +112,4 @@ nav ul li {
 .songInfo img {
   opacity: 0;
   transition: opacity 0.4s ease-in;
-}
+} */
