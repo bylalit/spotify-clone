@@ -1,10 +1,10 @@
-console.log("Hello welcome the spotify");
+// console.log("Hello welcome the spotify");
 
-let songIndex = 0;
-let masterPlay = document.getElementById("masterPlay");
-let audioElement = new Audio("1.mp3");
-let myProgressBar = document.getElementById("myProgressBar");
-let gif = document.getElementById("gif");
+// let songIndex = 0;
+// let masterPlay = document.getElementById("masterPlay");
+// let audioElement = new Audio("1.mp3");
+// let myProgressBar = document.getElementById("myProgressBar");
+// let gif = document.getElementById("gif");
 
 let songs = [
   {
