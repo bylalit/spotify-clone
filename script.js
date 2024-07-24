@@ -74,6 +74,6 @@ masterPlay.addEventListener("click", () => {
   }
 });
 
-// audioElement.addEventListener("timeupdate", () => {
-//   console.log("timeupdate");
-// });
+audioElement.addEventListener("timeupdate", () => {
+  console.log("timeupdate");
+});
