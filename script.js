@@ -5,6 +5,7 @@ let masterPlay = document.getElementById("masterPlay");
 let audioElement = new Audio("clipe/songs/1.mp3");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
+let masterSongName = document.getElementById("masterSongName");
 
 let songItem = Array.from(document.getElementsByClassName("songItem"));
 
@@ -106,7 +107,44 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
   element.addEventListener("click", (e)=>{
     // console.log(e.target);
     masteAllPlays();
+    songIndex = parseInt(e.target.id);
     e.target.classList.remove("fa-circle-play");
     e.target.classList.add("fa-circle-pause");
+    audioElement.src = `clipe/songs/${songIndex + 1}.mp3`;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove("fa-circle-play");
+    masterPlay.classList.add("fa-circle-pause");
+    gif.style.opacity = 1;
   })
+});
+
+document.getElementById('next').addEventListener('click', () =>{
+  if(songIndex >= 9){
+    songIndex = 0;
+  }else{
+    songIndex += 1;
+  }
+  audioElement.src = `clipe/songs/${songIndex + 1}.mp3`;
+  masterSongName.innerText = songs[songIndex].songName;
+  audioElement.currentTime = 0;
+  audioElement.play();
+  masterPlay.classList.remove("fa-circle-play");
+  masterPlay.classList.add("fa-circle-pause");
+});
+
+
+document.getElementById('previse').addEventListener('click', () =>{
+  if(songIndex <= 0){
+    songIndex = 0;
+  }else{
+    songIndex -= 1;
+  }
+  audioElement.src = `clipe/songs/${songIndex + 1}.mp3`;
+  masterSongName.innerText = songs[songIndex].songName;
+  audioElement.currentTime = 0;
+  audioElement.play();
+  masterPlay.classList.remove("fa-circle-play");
+  masterPlay.classList.add("fa-circle-pause");
 });
